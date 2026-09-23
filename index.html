@@ -86,9 +86,9 @@
   .date-desc{font-size:1.02rem;opacity:.8;margin-top:10px;max-width:52ch}
   .date-idx{font-family:var(--mono);font-size:13px;color:var(--amber);font-weight:500}
   .cal-note{margin-top:26px;font-weight:800;font-size:1.1rem;color:var(--magenta)}
-  .date-row.sold{opacity:.55}
+  .date-row.sold .date-title,.date-row.sold .date-desc,.date-row.sold .date-when{opacity:.5}
   .date-row.sold:hover{background:transparent;padding-left:6px}
-  .soldtag{display:inline-block;background:var(--magenta);color:#fff;font-weight:800;font-size:12px;padding:6px 12px;border-radius:100px;white-space:nowrap}
+  .soldtag{display:inline-block;vertical-align:middle;background:var(--magenta);color:#fff;font-family:var(--body);font-weight:800;font-size:14px;letter-spacing:.02em;padding:7px 15px;border-radius:100px;white-space:nowrap;opacity:1!important;margin-left:8px;transform:translateY(-4px)}
 
   /* ---------- come funziona ---------- */
   .how{background:var(--moss);color:#fff}
@@ -245,10 +245,10 @@
       <div class="date-row sold">
         <div class="date-when">Mar 23 set<span>Prima serata</span></div>
         <div>
-          <div class="date-title">Vincere la <em>paura</em></div>
+          <div class="date-title">Vincere la <em>paura</em> <span class="soldtag">Sold out</span></div>
           <p class="date-desc">Da cosa ci protegge la paura e quando invece ci blocca e basta. Come si torna a fare le cose che contano anche quando fa paura.</p>
         </div>
-        <div class="date-idx"><span class="soldtag">Sold out</span></div>
+        <div class="date-idx">01</div>
       </div>
 
       <div class="date-row">
