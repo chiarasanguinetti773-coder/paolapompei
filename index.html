@@ -86,6 +86,9 @@
   .date-desc{font-size:1.02rem;opacity:.8;margin-top:10px;max-width:52ch}
   .date-idx{font-family:var(--mono);font-size:13px;color:var(--amber);font-weight:500}
   .cal-note{margin-top:26px;font-weight:800;font-size:1.1rem;color:var(--magenta)}
+  .date-row.sold{opacity:.55}
+  .date-row.sold:hover{background:transparent;padding-left:6px}
+  .soldtag{display:inline-block;background:var(--magenta);color:#fff;font-weight:800;font-size:12px;padding:6px 12px;border-radius:100px;white-space:nowrap}
 
   /* ---------- come funziona ---------- */
   .how{background:var(--moss);color:#fff}
@@ -134,7 +137,11 @@
   .card-alt li::before{color:var(--amber)}
   .card-alt li{opacity:.9}
   .card .btn{text-align:center;width:100%}
-  .after-pay{font-size:.9rem;line-height:1.5;opacity:.85;margin:-8px 0 22px;font-weight:500}
+  .after-pay{font-size:.9rem;line-height:1.5;opacity:.85;margin:14px 0 0;font-weight:500}
+  .single-links{display:flex;flex-direction:column;gap:12px;margin-bottom:4px;flex:1}
+  .single-btn{display:flex;align-items:baseline;gap:12px;background:transparent;border:2px solid var(--line-l);border-radius:12px;padding:16px 20px;color:var(--cream);text-decoration:none;font-weight:700;font-size:1.05rem;transition:border-color .18s ease,background .18s ease,transform .18s ease}
+  .single-btn span{font-family:var(--mono);font-size:.8rem;color:var(--amber);font-weight:500;white-space:nowrap}
+  .single-btn:hover{border-color:var(--amber);background:rgba(245,166,35,.08);transform:translateY(-2px)}
   .bonus{margin-top:26px;background:var(--magenta);border-radius:18px;padding:30px 34px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
   .bonus h4{font-family:var(--display);font-size:1.5rem;font-weight:600;color:#fff;margin-bottom:8px;max-width:26ch}
   .bonus p{font-size:1.02rem;color:rgba(255,255,255,.9);max-width:48ch}
@@ -205,14 +212,14 @@
       <div class="hero-copy">
         <div class="live-tag"><span class="dot" aria-hidden="true"></span><span class="eyebrow">4 live di gruppo su Zoom</span></div>
         <h1>A tu per tu con <em>le emozioni.</em></h1>
-        <p class="lede">Quattro serate in diretta con me. Paura, ansia, rabbia e dolore, una alla volta. Con le vostre domande alla fine di ogni incontro.</p>
+        <p class="lede">Quattro serate in diretta con me, la prima già sold out. Restano ansia, rabbia e dolore, una alla volta, con le vostre domande alla fine di ogni incontro.</p>
         <p class="start">Si parte il 23 settembre.</p>
 
         <div class="hero-facts">
           <div class="fact"><span class="k">Quando</span><span class="v">23 set · 14 ott · 4 nov · 18 nov</span></div>
           <div class="fact"><span class="k">Orario</span><span class="v">Dalle 19:00 alle 21:00</span></div>
           <div class="fact"><span class="k">Dove</span><span class="v">Su Zoom, da dove vuoi</span></div>
-          <div class="fact"><span class="k">Quanto</span><span class="v">170 € tutte e 4, oppure 50 € a serata</span></div>
+          <div class="fact"><span class="k">Quanto</span><span class="v">150 € le tre serate, o 50 € l'una</span></div>
         </div>
 
         <div class="hero-actions">
@@ -235,13 +242,13 @@
     <h2>Un'emozione alla volta, una sera alla volta.</h2>
     <div class="dates">
 
-      <div class="date-row">
-        <div class="date-when">Mar 23 set<span>Dalle 19:00 alle 21:00</span></div>
+      <div class="date-row sold">
+        <div class="date-when">Mar 23 set<span>Prima serata</span></div>
         <div>
           <div class="date-title">Vincere la <em>paura</em></div>
           <p class="date-desc">Da cosa ci protegge la paura e quando invece ci blocca e basta. Come si torna a fare le cose che contano anche quando fa paura.</p>
         </div>
-        <div class="date-idx">01</div>
+        <div class="date-idx"><span class="soldtag">Sold out</span></div>
       </div>
 
       <div class="date-row">
@@ -289,7 +296,7 @@
       <div class="step">
         <span class="step-num">02</span>
         <h3>Ricevi il link Zoom</h3>
-        <p>Lo stesso link vale per tutte e quattro le serate. Ti arriva un promemoria il giorno stesso.</p>
+        <p>Ricevi il link Zoom della serata (o di tutte, col pacchetto). Ti arriva un promemoria il giorno stesso.</p>
       </div>
       <div class="step">
         <span class="step-num">03</span>
@@ -331,49 +338,48 @@
 <section class="pricing" id="iscriviti">
   <div class="wrap">
     <span class="eyebrow">Iscrizione</span>
-    <h2>170 € per tutte e quattro le serate.</h2>
+    <h2>Scegli come partecipare.</h2>
     <div class="price-grid">
 
       <div class="card card-main">
         <span class="flag">Il percorso completo</span>
-        <h3>Quattro incontri</h3>
-        <span class="sub">23 set · 14 ott · 4 nov · 18 nov</span>
-        <div class="price"><span class="cur">€</span><span class="amount">170</span></div>
-        <p class="per">Otto ore in tutto. 42,50 € a serata invece di 50</p>
+        <h3>Le tre serate</h3>
+        <span class="sub">14 ott · 4 nov · 18 nov</span>
+        <div class="price"><span class="cur">€</span><span class="amount">150</span></div>
+        <p class="per">Le tre serate insieme, più la consulenza in regalo</p>
         <div class="divider"></div>
         <ul>
-          <li>Quattro serate da due ore su Zoom</li>
+          <li>Le tre serate da due ore su Zoom</li>
           <li>Le tue domande alla fine di ogni incontro</li>
           <li>Le registrazioni restano tue per sempre</li>
           <li>I materiali di ogni incontro in PDF</li>
           <li>Puoi mandarmi la tua domanda prima della live</li>
         </ul>
-        <a class="btn btn-ink" href="https://buy.stripe.com/7sY00b36I3S8fuM4l728803" target="_blank" rel="noopener">Prendi il tuo posto</a>
+        <a class="btn btn-ink" href="https://buy.stripe.com/fZu6oz7mY0FW3M46tf28808" target="_blank" rel="noopener">Prendi le tre serate</a>
       </div>
 
       <div class="card card-alt">
         <h3>Una sola serata</h3>
-        <span class="sub">Scegli tu quale</span>
+        <span class="sub">Scegli l'emozione</span>
         <div class="price"><span class="cur">€</span><span class="amount">50</span></div>
-        <p class="per">Se prima vuoi provare</p>
+        <p class="per">Una serata da due ore, tua per sempre</p>
         <div class="divider"></div>
-        <ul>
-          <li>Una serata da due ore su Zoom</li>
-          <li>La registrazione di quell'incontro, tua per sempre</li>
-          <li>I materiali dell'incontro in PDF</li>
-        </ul>
-        <p class="after-pay">Dopo il pagamento scrivimi su Instagram o a info@paolapompei.it quale serata hai scelto: ti mando io il link.</p>
-        <a class="btn btn-outline" href="https://buy.stripe.com/7sY00b36I3S8fuM4l728803" target="_blank" rel="noopener">Paga la singola serata</a>
+        <div class="single-links">
+          <a class="single-btn" href="https://buy.stripe.com/8x2fZ9cHiagw6Yg9Fr28805" target="_blank" rel="noopener"><span>14 ott</span> Placare l'ansia</a>
+          <a class="single-btn" href="https://buy.stripe.com/00weV5bDeagw4Q818V28806" target="_blank" rel="noopener"><span>4 nov</span> Dominare la rabbia</a>
+          <a class="single-btn" href="https://buy.stripe.com/fZu7sD7mYfAQgyQdVH28807" target="_blank" rel="noopener"><span>18 nov</span> Curare il dolore</a>
+        </div>
+        <p class="after-pay">Ogni pulsante è la sua serata: paghi e sei dentro, senza dover scrivere quale hai scelto.</p>
       </div>
 
     </div>
 
     <div class="bonus">
       <div>
-        <h4>Con il percorso completo, una consulenza individuale in regalo</h4>
+        <h4>Con le tre serate, una consulenza individuale in regalo</h4>
         <p>Mezz'ora solo tua, con me, da fissare entro dicembre. Riservata alle prime 10 iscritte.</p>
       </div>
-      <span class="tag">4 + 1 · primi 10 posti</span>
+      <span class="tag">3 + 1 · primi 10 posti</span>
     </div>
 
     <p class="note">Paghi con carta, Apple Pay o Google Pay. La ricevuta ti arriva subito dopo l'acquisto.<br>I posti sono 35 in tutto: il gruppo resta piccolo perché ci sia spazio per le domande.</p>
@@ -421,7 +427,7 @@
   <div class="wrap">
     <span class="eyebrow">Si parte il 23 settembre</span>
     <h2>Il gruppo è di 35 persone.</h2>
-    <a class="btn btn-amber" href="https://buy.stripe.com/8x200b0YAcoE6YgdVH28804" target="_blank" rel="noopener">Prendi il tuo posto a 170 €</a>
+    <a class="btn btn-amber" href="https://buy.stripe.com/fZu6oz7mY0FW3M46tf28808" target="_blank" rel="noopener">Prendi le tre serate a 150 €</a>
     <span class="seats">Quando i posti finiscono la pagina si chiude fino alla prossima edizione.</span>
   </div>
 </section>
@@ -444,7 +450,7 @@
 </footer>
 
 <div class="sticky">
-  <div class="s-price">170 € · 4 serate<span>Si parte il 23 settembre</span></div>
+  <div class="s-price">150 € · 3 serate<span>Prossima: 14 ottobre</span></div>
   <a class="btn btn-amber" href="#iscriviti">Prendi il posto</a>
 </div>
 
